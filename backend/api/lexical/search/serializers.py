@@ -19,8 +19,4 @@ class VersesSerializers(serializers.ModelSerializer):
             "verseWithoutTashkeel",
             "numberInSurah",
             "numberInQuran",
-            "audio",
-            "audio1",
-            "audio2",
-            "sajda",
         ]
