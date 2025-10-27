@@ -1,7 +1,6 @@
 <h1 align="center">Quranic Lexical Search API</h1>
 <h4 align="center">A Django REST API for Lexical Search in the Quran</h4>
 
-
 ## 📋 Table of Contents
 
 *   [About the Project](#about-the-project)
