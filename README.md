@@ -1,26 +1,7 @@
-<div align="center">
- <img style="width: 50%; mix-blend-mode: multiply;" src="https://user-images.githubusercontent.com/52632898/181664653-e2a64fb2-35f2-47d3-8af6-8451d3fbe305.png" alt="Quranic Lexical Search API">
-</div>
-
 <h1 align="center">Quranic Lexical Search API</h1>
-<h4 align="center">A Django REST API for Lexical Search in the Holy Quran</h4>
+<h4 align="center">A Django REST API for Lexical Search in the Quran</h4>
 
-<div align="center">
-    <a href="https://github.com/ahr9n/quranic-search-v2/graphs/commit-activity">
-        <img src="https://img.shields.io/badge/Maintained%3F-YES-green.svg" alt="maintenance" />
-    </a>
-    <a href="https://github.com/ahr9n/quranic-search-v2/blob/main/LICENSE">
-        <img src="https://img.shields.io/github/license/ahr9n/quranic-search-v2?logo=gnu&.svg" alt="license" />
-    </a>
-    <a href="http://makeapullrequest.com">
-        <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="pull-request" />
-    </a>
-    <a href="https://docs.djangoproject.com/en/4.2/">
-        <img src="https://img.shields.io/badge/Django-5.2-092E20?logo=django" alt="django" />
-    </a>
-</div>
-
-## 📋 Table of Contents
+##  Table of Contents
 
 *   [About the Project](#about-the-project)
     *   [What is this API?](#what-is-this-api)
@@ -34,23 +15,14 @@
     *   [Prerequisites](#prerequisites)
     *   [Installation](#installation)
     *   [Running the API](#running-the-api)
-*   [API Usage Examples](#api-usage-examples)
-    *   [Search Verses by Keyword](#1-search-verses-by-keyword)
-    *   [Get All Verses](#2-get-all-verses)
-    *   [Get Surah by ID](#3-get-surah-by-id)
-    *   [Get Verse by Surah and Verse Number](#4-get-verse-by-surah-and-verse-number)
-    *   [Get Verse by Absolute Verse Number](#5-get-verse-by-absolute-verse-number)
-*   [Response Format](#response-format)
 *   [Development](#development)
-*   [License](#license)
-
 ---
 
-## 🎯 About the Project
+##  About the Project
 
-This project provides a **Django REST API** for performing lexical (keyword-based) search in the Holy Quran. It enables developers and researchers to programmatically search, retrieve, and access verses from the Quran using simple HTTP requests.
+This project provides a **Django REST API** for performing lexical (keyword-based) search in the Quran. It enables developers and researchers to programmatically search, retrieve, and access verses from the Quran using simple HTTP requests.
 
-### 🌟 What is this API?
+###  What is this API?
 
 The **Quranic Lexical Search API** is a backend service that provides programmatic access to all 6,236 verses of the Holy Quran. It allows you to:
 
@@ -59,7 +31,7 @@ The **Quranic Lexical Search API** is a backend service that provides programmat
 - Access individual verses by their position in a Surah or in the entire Quran
 - Get verses with or without Tashkeel (diacritical marks)
 
-### 💡 Why Lexical Search?
+###  Why Lexical Search?
 
 Lexical (keyword-based) search is essential for:
 - Finding exact word occurrences in the Quran
@@ -67,17 +39,17 @@ Lexical (keyword-based) search is essential for:
 - Case-insensitive text matching across the entire corpus
 - Quick and accurate retrieval based on exact text patterns
 
-### ✨ Features
+###  Features
 
 - **RESTful API**: Clean, intuitive REST endpoints
 - **Case-Insensitive Search**: Find words regardless of letter case
 - **Dual Text Matching**: Search in verses both with and without Tashkeel (diacritical marks)
-- **Structured Responses**: JSON responses with verse metadata (Surah, Juz, page, etc.)
+- **Structured Responses**: JSON responses with verse metadata (Surah, Juz, page, audio URLs, etc.)
 - **Fast & Efficient**: Built on Django with SQLite3 for quick responses
 - **CORS Enabled**: Ready for cross-origin requests from web applications
 - **Admin Interface**: Django admin for managing verses and Surahs
 
-### 🏗️ Architecture
+###  Architecture
 
 ```
 Client Request
@@ -102,7 +74,7 @@ Client
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Component | Technology | Description |
 |-----------|-----------|-------------|
@@ -115,7 +87,7 @@ Client
 
 ---
 
-## 📍 API Endpoints
+##  API Endpoints
 
 All endpoints are prefixed with `/api/lexical/`
 
@@ -130,7 +102,7 @@ All endpoints are prefixed with `/api/lexical/`
 
 ---
 
-## 📁 Directory Structure
+##  Directory Structure
 
 ```
 backend/
@@ -148,7 +120,7 @@ backend/
         │   ├── static/                    # Static files (CSS)
         │   ├── __init__.py
         │   ├── admin.py                   # Django admin configuration
-        │   ├── models.py                  # Database models (Verses, Surah)
+        │   ├── models.py                   # Database models (Verses, Surah)
         │   ├── serializers.py             # API serializers
         │   ├── urls.py                    # URL patterns
         │   └── views.py                   # API views
@@ -162,9 +134,9 @@ backend/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
-### 📌 Prerequisites
+###  Prerequisites
 
 Before you begin, ensure you have the following installed:
 
@@ -205,7 +177,7 @@ Before you begin, ensure you have the following installed:
 5. **Load the Quran database** (if not already loaded):
    The database file `quran.db` should be located in the `db/` directory. If migrations don't populate the data automatically, you may need to load it using custom scripts or management commands.
 
-### ▶️ Running the API
+###  Running the API
 
 Start the development server:
 
@@ -223,169 +195,7 @@ gunicorn api.wsgi:application --bind 0.0.0.0:8000
 
 ---
 
-## 📖 API Usage Examples
-
-### 1. Search Verses by Keyword
-
-Search for verses containing a specific Arabic word or phrase.
-
-**Endpoint:**
-```
-GET /api/lexical/search/الله
-```
-
-**cURL:**
-```bash
-curl http://localhost:8000/api/lexical/search/الله
-```
-
-**Response:**
-```json
-{
-  "length": 120,
-  "data": [
-    {
-      "verse_pk": "S001V001",
-      "page": 1,
-      "hizbQuarter": 1,
-      "juz": 1,
-      "surah": "الفاتحة",
-      "verse": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
-      "verseWithoutTashkeel": "بسم الله الرحمن الرحيم",
-      "numberInSurah": 1,
-      "numberInQuran": 1
-    }
-    // ... more results
-  ]
-}
-```
-
-### 2. Get All Verses
-
-Retrieve all 6,236 verses from the Quran (use with caution in production).
-
-**Endpoint:**
-```
-GET /api/lexical/all
-```
-
-**cURL:**
-```bash
-curl http://localhost:8000/api/lexical/all
-```
-
-### 3. Get Surah by ID
-
-Get all verses from a specific Surah (1-114).
-
-**Endpoint:**
-```
-GET /api/lexical/surah/1
-```
-
-**cURL:**
-```bash
-curl http://localhost:8000/api/lexical/surah/1
-```
-
-### 4. Get Verse by Surah and Verse Number
-
-Retrieve a specific verse by its Surah number and verse number within that Surah.
-
-**Endpoint:**
-```
-GET /api/lexical/verse-in-surah/2/255
-```
-
-**cURL:**
-```bash
-curl http://localhost:8000/api/lexical/verse-in-surah/2/255
-```
-
-**Response:**
-```json
-{
-  "data": {
-    "verse_pk": "S002V255",
-    "page": 42,
-    "hizbQuarter": 5,
-    "juz": 3,
-    "surah": "البقرة",
-    "verse": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ...",
-    "verseWithoutTashkeel": "الله لا إله إلا هو الحي القيوم...",
-    "numberInSurah": 255,
-    "numberInQuran": 286
-  }
-}
-```
-
-### 5. Get Verse by Absolute Verse Number
-
-Get a verse by its sequential number in the entire Quran (1-6236).
-
-**Endpoint:**
-```
-GET /api/lexical/verse-in-quran/286
-```
-
-**cURL:**
-```bash
-curl http://localhost:8000/api/lexical/verse-in-quran/286
-```
-
----
-
-## 📦 Response Format
-
-All API responses follow a consistent structure:
-
-**Success Response (Search/List endpoints):**
-```json
-{
-  "length": <number_of_results>,
-  "data": [
-    {
-      "verse_pk": "S001V001",
-      "page": <page_number>,
-      "hizbQuarter": <quarter_number>,
-      "juz": <juz_number>,
-      "surah": "<surah_name>",
-      "verse": "<verse_text_with_tashkeel>",
-      "verseWithoutTashkeel": "<verse_text_without_tashkeel>",
-      "numberInSurah": <verse_number_in_surah>,
-      "numberInQuran": <absolute_verse_number>
-    }
-  ]
-}
-```
-
-**Success Response (Single verse endpoints):**
-```json
-{
-  "data": {
-    "verse_pk": "S001V001",
-    "page": <page_number>,
-    "hizbQuarter": <quarter_number>,
-    "juz": <juz_number>,
-    "surah": "<surah_name>",
-    "verse": "<verse_text_with_tashkeel>",
-    "verseWithoutTashkeel": "<verse_text_without_tashkeel>",
-    "numberInSurah": <verse_number_in_surah>,
-    "numberInQuran": <absolute_verse_number>
-  }
-}
-```
-
-**Error Response (404):**
-```json
-{
-  "detail": "Not found."
-}
-```
-
----
-
-## 🔧 Development
+##  Development
 
 ### Running Tests
 
@@ -413,22 +223,5 @@ Key settings are configured in `api/settings.py`:
 
 ### Database Models
 
-- **Verses**: Main model containing verse text and metadata (page, juz, surah, verse numbers)
+- **Verses**: Main model containing verse text, metadata (page, juz, surah), and audio URLs
 - **Surah**: Model for Surah names (with and without Tashkeel)
-
----
-
-## ⚠️ License
-
-Licensed under the [GPL-v3](LICENSE) License.
-
----
-
-<div align="center">
-    <p>Made with ❤️ by the Quranic Search Team</p>
-    <p>
-        <a href="https://github.com/ahr9n/quranic-search-v2">GitHub</a> •
-        <a href="https://github.com/ahr9n/quranic-search-v2/issues">Report Issues</a> •
-        <a href="https://github.com/ahr9n/quranic-search-v2/blob/main/COMPLETE_SYSTEM_ARCHITECTURE.md">Architecture</a>
-    </p>
-</div>
