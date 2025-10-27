@@ -1,24 +1,6 @@
-<div align="center">
- <img style="width: 50%; mix-blend-mode: multiply;" src="https://user-images.githubusercontent.com/52632898/181664653-e2a64fb2-35f2-47d3-8af6-8451d3fbe305.png" alt="Quranic Lexical Search API">
-</div>
-
 <h1 align="center">Quranic Lexical Search API</h1>
 <h4 align="center">A Django REST API for Lexical Search in the Holy Quran</h4>
 
-<div align="center">
-    <a href="https://github.com/ahr9n/quranic-search-v2/graphs/commit-activity">
-        <img src="https://img.shields.io/badge/Maintained%3F-YES-green.svg" alt="maintenance" />
-    </a>
-    <a href="https://github.com/ahr9n/quranic-search-v2/blob/main/LICENSE">
-        <img src="https://img.shields.io/github/license/ahr9n/quranic-search-v2?logo=gnu&.svg" alt="license" />
-    </a>
-    <a href="http://makeapullrequest.com">
-        <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="pull-request" />
-    </a>
-    <a href="https://docs.djangoproject.com/en/4.2/">
-        <img src="https://img.shields.io/badge/Django-5.2-092E20?logo=django" alt="django" />
-    </a>
-</div>
 
 ## 📋 Table of Contents
 
@@ -42,13 +24,11 @@
     *   [Get Verse by Absolute Verse Number](#5-get-verse-by-absolute-verse-number)
 *   [Response Format](#response-format)
 *   [Development](#development)
-*   [License](#license)
-
 ---
 
 ## 🎯 About the Project
 
-This project provides a **Django REST API** for performing lexical (keyword-based) search in the Holy Quran. It enables developers and researchers to programmatically search, retrieve, and access verses from the Quran using simple HTTP requests.
+This project provides a **Django REST API** for performing lexical (keyword-based) search in the Quran. It enables developers and researchers to programmatically search, retrieve, and access verses from the Quran using simple HTTP requests.
 
 ### 🌟 What is this API?
 
