@@ -37,11 +37,7 @@ curl http://localhost:8000/api/lexical/search/الله
       "verse": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
       "verseWithoutTashkeel": "بسم الله الرحمن الرحيم",
       "numberInSurah": 1,
-      "numberInQuran": 1,
-      "audio": "https://...",
-      "audio1": "https://...",
-      "audio2": "https://...",
-      "sajda": false
+      "numberInQuran": 1
     }
     // ... more results
   ]
@@ -102,11 +98,7 @@ curl http://localhost:8000/api/lexical/verse-in-surah/2/255
     "verse": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ...",
     "verseWithoutTashkeel": "الله لا إله إلا هو الحي القيوم...",
     "numberInSurah": 255,
-    "numberInQuran": 286,
-    "audio": "https://...",
-    "audio1": "https://...",
-    "audio2": "https://...",
-    "sajda": false
+    "numberInQuran": 286
   }
 }
 ```
@@ -145,11 +137,7 @@ All API responses follow a consistent structure:
       "verse": "<verse_text_with_tashkeel>",
       "verseWithoutTashkeel": "<verse_text_without_tashkeel>",
       "numberInSurah": <verse_number_in_surah>,
-      "numberInQuran": <absolute_verse_number>,
-      "audio": "<primary_audio_url>",
-      "audio1": "<secondary_audio_url_1>",
-      "audio2": "<secondary_audio_url_2>",
-      "sajda": <boolean>
+      "numberInQuran": <absolute_verse_number>
     }
   ]
 }
@@ -159,7 +147,15 @@ All API responses follow a consistent structure:
 ```json
 {
   "data": {
-    // same structure as above, but single object
+    "verse_pk": "S001V001",
+    "page": <page_number>,
+    "hizbQuarter": <quarter_number>,
+    "juz": <juz_number>,
+    "surah": "<surah_name>",
+    "verse": "<verse_text_with_tashkeel>",
+    "verseWithoutTashkeel": "<verse_text_without_tashkeel>",
+    "numberInSurah": <verse_number_in_surah>,
+    "numberInQuran": <absolute_verse_number>
   }
 }
 ```
