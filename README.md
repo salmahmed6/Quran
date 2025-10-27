@@ -1,7 +1,7 @@
 <h1 align="center">Quranic Lexical Search API</h1>
 <h4 align="center">A Django REST API for Lexical Search in the Quran</h4>
 
-## 📋 Table of Contents
+##  Table of Contents
 
 *   [About the Project](#about-the-project)
     *   [What is this API?](#what-is-this-api)
@@ -19,11 +19,11 @@
 *   [Development](#development)
 ---
 
-## 🎯 About the Project
+##  About the Project
 
 This project provides a **Django REST API** for performing lexical (keyword-based) search in the Quran. It enables developers and researchers to programmatically search, retrieve, and access verses from the Quran using simple HTTP requests.
 
-### 🌟 What is this API?
+###  What is this API?
 
 The **Quranic Lexical Search API** is a backend service that provides programmatic access to all 6,236 verses of the Holy Quran. It allows you to:
 
@@ -32,7 +32,7 @@ The **Quranic Lexical Search API** is a backend service that provides programmat
 - Access individual verses by their position in a Surah or in the entire Quran
 - Get verses with or without Tashkeel (diacritical marks)
 
-### 💡 Why Lexical Search?
+###  Why Lexical Search?
 
 Lexical (keyword-based) search is essential for:
 - Finding exact word occurrences in the Quran
@@ -40,7 +40,7 @@ Lexical (keyword-based) search is essential for:
 - Case-insensitive text matching across the entire corpus
 - Quick and accurate retrieval based on exact text patterns
 
-### ✨ Features
+###  Features
 
 - **RESTful API**: Clean, intuitive REST endpoints
 - **Case-Insensitive Search**: Find words regardless of letter case
@@ -50,7 +50,7 @@ Lexical (keyword-based) search is essential for:
 - **CORS Enabled**: Ready for cross-origin requests from web applications
 - **Admin Interface**: Django admin for managing verses and Surahs
 
-### 🏗️ Architecture
+###  Architecture
 
 ```
 Client Request
@@ -75,7 +75,7 @@ Client
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Component | Technology | Description |
 |-----------|-----------|-------------|
@@ -88,7 +88,7 @@ Client
 
 ---
 
-## 📍 API Endpoints
+##  API Endpoints
 
 All endpoints are prefixed with `/api/lexical/`
 
@@ -103,7 +103,7 @@ All endpoints are prefixed with `/api/lexical/`
 
 ---
 
-## 📁 Directory Structure
+##  Directory Structure
 
 ```
 backend/
@@ -135,9 +135,9 @@ backend/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
-### 📌 Prerequisites
+###  Prerequisites
 
 Before you begin, ensure you have the following installed:
 
@@ -178,7 +178,7 @@ Before you begin, ensure you have the following installed:
 5. **Load the Quran database** (if not already loaded):
    The database file `quran.db` should be located in the `db/` directory. If migrations don't populate the data automatically, you may need to load it using custom scripts or management commands.
 
-### ▶️ Running the API
+###  Running the API
 
 Start the development server:
 
@@ -196,7 +196,7 @@ gunicorn api.wsgi:application --bind 0.0.0.0:8000
 
 ---
 
-## 🔧 Development
+##  Development
 
 ### Running Tests
 

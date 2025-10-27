@@ -1,4 +1,4 @@
-## 📖 API Usage Examples
+##  API Usage Examples
 
 [API Usage Examples](#api-usage-examples)
     *   [Search Verses by Keyword](#1-search-verses-by-keyword)
