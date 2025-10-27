@@ -82,8 +82,7 @@ Client
 | **API Framework** | [Django REST Framework](https://www.django-rest-framework.org/) | Toolkit for building Web APIs |
 | **Database** | [SQLite3](https://www.sqlite.org/) | Lightweight embedded database |
 | **CORS** | [django-cors-headers](https://github.com/adamchainz/django-cors-headers) | Cross-Origin Resource Sharing |
-| **Server** | [Gunicorn](https://gunicorn.org/) | Python WSGI HTTP Server |
-| **Static Files** | [WhiteNoise](https://whitenoise.evans.io/) | Static file serving |
+
 
 ---
 
