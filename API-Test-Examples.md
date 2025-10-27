@@ -1,11 +1,13 @@
 ##  API Usage Examples
 
-[API Usage Examples](#api-usage-examples)
+*   [API Usage Examples](#api-usage-examples)
     *   [Search Verses by Keyword](#1-search-verses-by-keyword)
     *   [Get All Verses](#2-get-all-verses)
     *   [Get Surah by ID](#3-get-surah-by-id)
     *   [Get Verse by Surah and Verse Number](#4-get-verse-by-surah-and-verse-number)
     *   [Get Verse by Absolute Verse Number](#5-get-verse-by-absolute-verse-number)
+*   [Response Format](#response-format)
+
 
 ### 1. Search Verses by Keyword
 
@@ -125,7 +127,7 @@ curl http://localhost:8000/api/lexical/verse-in-quran/286
 
 ---
 
-## 📦 Response Format
+##  Response Format
 
 All API responses follow a consistent structure:
 

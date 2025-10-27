@@ -15,7 +15,6 @@
     *   [Prerequisites](#prerequisites)
     *   [Installation](#installation)
     *   [Running the API](#running-the-api)
-*   [Response Format](#response-format)
 *   [Development](#development)
 ---
 
