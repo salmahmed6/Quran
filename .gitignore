@@ -15,26 +15,5 @@ backend/api/semantic/models/full_grams_cbow_100_twitter.mdl.wv.vectors.npy
 backend/api/semantic/src/__pycache__/
 backend/api/semantic/src/models/__pycache__/
 
-# frontend
-# dependencies
-frontend/node_modules
-frontend/.pnp
-frontend/.pnp.js
 
-# testing
-frontend/coverage
-
-# production
-frontend/build
-
-# misc
-frontend/.DS_Store
-frontend/.env.local
-frontend/.env.development.local
-frontend/.env.test.local
-frontend/.env.production.local
-
-frontend/npm-debug.log*
-frontend/yarn-debug.log*
-frontend/yarn-error.log*
 *.log

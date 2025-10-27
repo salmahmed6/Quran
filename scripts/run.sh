@@ -9,7 +9,3 @@ cd ../semantic || exit
 pwd
 python3 app.py >> ../../../logger.log 2>&1 &
 
-# Run the website frontend locally
-cd ../../../ || exit
-cd frontend || exit
-npm start

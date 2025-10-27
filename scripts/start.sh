@@ -20,5 +20,3 @@ cd ../../../../
 # Install (backend/frontend) requirements
 pip install -r backend/api/lexical/requirements.txt
 pip install -r backend/api/semantic/requirements.txt
-cd frontend || exit
-npm install
